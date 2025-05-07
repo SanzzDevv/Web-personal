@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ahmad</title>
+    <style>
+        /* Import Font Elegan */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Gaya Umum */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #121212, #1e1e1e);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+            padding-top: 70px;
+        }
+
+        /* Navigasi dengan gradasi */
+        nav {
+            background: linear-gradient(to right, #f1c40f, #1e1e1e);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding: 10px 15px;
+        }
+        nav a:hover, nav a.active {
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
+        }
+
+        /* Background Nama Ahmad */
+        .background-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 120px;
+            font-weight: bold;
+            color: rgba(241, 196, 15, 0.1);
+            text-shadow: 0 0 50px rgba(241, 196, 15, 0.3);
+            white-space: nowrap;
+            z-index: -1;
+        }
+
+        /* Header dengan gradasi */
+        header {
+            background: linear-gradient(to right, #f1c40f, #1e1e1e);
+            padding: 50px;
+            border-bottom: 3px solid #f1c40f;
+        }
+        header h1 {
+            font-size: 2.8em;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
+        /* Kata-kata penyemangat */
+        .quote {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #f1c40f; /* Warna emas */
+            margin-top: 10px;
+            text-shadow: 0 0 10px rgba(241, 196, 15, 0.6);
+        }
+
+        /* Garis Elegan dengan gradasi */
+        .divider {
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #f1c40f, transparent);
+            margin: 40px auto;
+        }
+
+        /* Section */
+        section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 25px;
+            background: linear-gradient(to bottom, #1e1e1e, #2a2a2a);
+            border: 1px solid #f1c40f;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+        }
+        section h2 {
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 5px;
+        }
+
+        /* Bagian Kontak */
+        section#contact p a {
+            color: #f1c40f; /* Warna emas */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        section#contact p a:hover {
+            color: #fff;
+        }
+
+        /* Responsivitas */
+        @media (max-width: 768px) {
+            .background-text {
+                font-size: 60px;
+            }
+            header {
+                padding: 30px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            section {
+                width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            .background-text {
+                font-size: 40px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+        /* Navigasi dengan gradasi */
+nav {
+    background: linear-gradient(to right, #f1c40f, #1e1e1e);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start; /* Mengubah agar navbar di kiri */
+    gap: 20px;
+    z-index: 100;
+    overflow-x: auto; /* Menambahkan scroll horizontal jika diperlukan */
+    white-space: nowrap; /* Agar elemen tidak terputus dalam satu baris */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  cursor: default;
+}
+
+.hamburger span {
+  color: white;
+  font-weight: bold;
+}
+
+  <!-- Import Typed.js untuk animasi ketik --> <script src="https://cdn.jsdelivr.net/npm /typed.js@2.0.12"></script> <!-- Animasi Scroll --> <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1 /dist/aos.css"> <!-- Animasi Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+
+/* Gaya untuk bagian pengembangan */
+.development {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    background: linear-gradient(to bottom, #1e1e1e, #2a2a2a);
+    border: 2px dashed #f1c40f; 
+    
+    /* Garis konstruksi */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    text-align: center;
+}
+
+/* Menambahkan efek konstruksi */
+.development-box {
+    position: relative;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border: 3px solid #f1c40f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.development-box h3 {
+    color: #f1c40f;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
+}
+
+.development-box p {
+    color: #ddd;
+    font-size: 1.2em;
+}
+
+/* Efek garis konstruksi di sekeliling */
+.development-box::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f1c40f;
+    border-radius: 15px;
+    background-image: repeating-linear-gradient(45deg, #f1c40f 0px, #f1c40f 2px, transparent 2px, transparent 4px);
+    pointer-events: none;
+}
+
+.development-box::after {
+    content: 'Under Construction';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f1c40f;
+    text-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
+    z-index: 10;
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <nav>
+      <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#skills">Skill</a>
+        <a href="#skills">Prestasi</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <!-- Background Nama -->
+    <div class="background-text">AHMAD</div>
+
+    <header>
+        <h1>Ahmad</h1>
+        <p>Cyber Engineering | Developer | Anggota OSIS</p>
+        <p class="quote">"Disiplin mengalahkan bakat saat bakat tak disiplin"</p>
+    </header>
+
+    <div class="divider"></div>
+
+    <section id="about" data-aos="fade-up">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah seorang pelajar yang memiliki minat dalam bidang Cyber Engineering, excel, dan coding. Saya percaya bahwa belajar adalah investasi terbaik, dan saya selalu mencari peluang untuk meningkatkan kemampuan saya dalam dunia teknologi
+        <h2>Organisasi</h2>
+            Saat ini, saya juga aktif sebagai anggota OSIS di sekolah, di mana saya belajar tentang kepemimpinan, tanggung jawab, dan bekerja dalam tim.  
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Proyek Saya</h2>
+        <p>Berikut beberapa proyek yang pernah saya buat:</p>
+        <ul>
+            <li><strong>Bot WhatsApp</strong> – Meskipun gagal karena perangkat kurang kuat, saya mempelajari dasar-dasar API dan bot automation.</li>
+            <li><strong>Website Portofolio</strong> – Website ini adalah salah satu contoh proyek saya dalam belajar frontend development.</li>
+        </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Kemampuan Saya</h2>
+        <p>Saya memiliki keterampilan dalam beberapa bidang berikut:</p>
+        <ul>
+            <li><strong>Cyber Engineering</strong> – Mempelajari keamanan digital dan jaringan.</li>
+            <li><strong>Coding</strong> – Menguasai Python, HTML, dan JavaScript.</li>
+            <li><strong>Excel & Data</strong> – Menggunakan Excel untuk analisis dan pengolahan data.</li>
+        </ul>
+    </section>
+    
+    <div class="divider"></div>
+
+<section id="awards" data-aos="fade-up">
+    <h2>Penghargaan & Prestasi</h2>
+    <ul>
+        <li><strong>Juara tingkat Nasional dan Peringkat 7</strong> – Lomba RSCI Informatika oleh Puskanas tahun 2025.</li>
+        <li><strong>Juara tingkat Nasional dan peringkat 17</strong> – Lomba IOS Informatika oleh Puskanas tahun 2025.</li>
+        <li><strong>Juara tingkat Nasional dan Peringkat 8</strong> – Lomba IYSC Informatika oleh Puskanas tahun 2025.</li>
+    </ul>
+</section>
+
+    <div class="divider"></div>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Kontak Saya</h2>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hasankerammm" target="_blank">@hasankerammm</a></p>
+        <p><strong>No. WA:</strong> <a href="https://wa.me/6287812029190" target="_blank">+62 87812029190</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sanzzdevv@gmail.com" target="_blank">sanzzdevv@gmail.com</a></p>
+        <p><strong>Github:</strong> <a href="https://github.com/SanzzDevv/" target="_blank">sanzzdevv</a></p>
+    </section>
+    
+    <section id="development" data-aos="fade-up">
+    <div class="development-box">
+        <h3>Ops! Ini sedang tahap pengembangan</h3>
+        <p>Mohon maaf atas ketidaknyamanannya. Fitur ini akan segera tersedia.</p>
+    </div>
+</section>
+
+    <!-- Script Animasi Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <footer>
+    <p>&copy; 2025 Ahmad. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
