@@ -1,0 +1,255 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Menghindari scroll horizontal yang tidak diinginkan */
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+nav ul li {
+  flex-shrink: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Section styles */
+section {
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+
+#about {
+  background-color: #e2e2e2;
+}
+
+#portfolio {
+  background-color: #d0d0d0;
+}
+
+#contact {
+  background-color: #b8b8b8;
+}
+
+/* Scrollable Project Container */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project {
+  scroll-snap-align: start;
+  flex: 0 0 100%; /* Full width for each project */
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-notice {
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.contact-details {
+  padding: 20px;
+  background-color: transparent; /* biar gak seperti kotak tertutup */
+  border: none;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.contact-details a {
+  color: #0056b3;
+  font-weight: 500;
+  text-decoration: none;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Email (Gmail) */
+a[href^="mailto:"] {
+  color: #ff6a6a; /* Merah muda cerah */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* GitHub */
+a[href*="github.com"] {
+  color: #ffffff; /* Putih agar kontras di latar gelap */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Instagram */
+a[href*="instagram.com"] {
+  color: #ff69b4; /* Pink terang */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.about-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about-card {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#secret {
+  background-color: #ccc;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#secret input {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#secret button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+#secret .notice {
+  color: #333;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
