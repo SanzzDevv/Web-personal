@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  
+  <header>
+  <nav>
+    <div class="logo">Ahmad</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+  </nav>
+</header>
+
+  <section id="home">
+    <div class="container">
+      <h1>Hi, I'm Ahmad</h1>
+      <p>Welcome to my personal website!</p>
+    </div>
+  </section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-scroll">
+      <div class="about-card">
+        <p>I'm a student passionate about technology, coding, and learning new things.</p>
+      </div>
+      <div class="about-card">
+        <p>I am also currently active as a member of the student council at school, where I learn about leadership, responsibility, and teamwork.</p>
+      </div>
+      <div class="about-card">
+        <p>I have experience in web development, including skills in HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="about-card">
+        <p>My goal is to pursue a career in cyber security and contribute to creating a safer digital world.</p>
+      </div>
+      <div class="about-card">
+        <p>I strongly believe in the importance of continuous learning and always strive to improve myself.</p>
+      </div>
+    </div>
+    <p class="scroll-notice">Scroll to the right →</p>
+  </div>
+</section>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="scroll-container">
+      <div class="project">
+        <h3>Web Development</h3>
+        <p>The website is one of my project examples in learning front-end development.</p>
+      </div>
+      <div class="project">
+        <h3>Calculator</h3>
+        <p>I once created a calculator using the Python programming language, where I learned to build a simple calculator.</p>
+      </div>
+      <div class="project">
+        <h3>All-Purpose Bot</h3>
+        <p>I once wanted to create an all-purpose bot, but for now, I will focus on understanding the basics first.</p>
+      </div>
+    </div>
+  </div>
+  <p class="scroll-notice">Scroll to the right →</p>
+</section>
+
+<section id="secret">
+  <h2>My Biggest Secret</h2>
+  <div class="password-container">
+  <label for="password">Enter Password:</label>
+  <input type="password" id="password" placeholder="Enter password here">
+  <button onclick="checkPassword()">Submit</button>
+  <p class="notice">*If you want the password, please contact the website creator.</p>
+</div>
+
+<!-- Modal Popup -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>Ops! False</h2>
+    <p>Incorrect password entered.</p>
+  </div>
+</div>
+</div>
+</section>
+
+  <section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:sanzzdevv@gmail.com">sanzzdevv@gmail.com</a></p>
+      <p><strong>Github:</strong> <a href="https://github.com/SanzzDevv" target="_blank">SanzzDevv</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hasankerammm" target="_blank">hasankerammm</a></p>
+      <p>Thanks for visiting! Feel free to rate by contacting me.</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Ahmad</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
